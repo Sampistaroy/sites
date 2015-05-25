@@ -5,11 +5,12 @@ This plugin enables multi-site support for Croogo (Original statement by the ori
 
 On activation the database is automatically created and a default site is set up. Enjoy!
 
-Configuration
+Installation
 -------------
-
-1. Setup a new datasource named `sites` in croogo database configuration.
-
+1. Download Zip file, unzip it to your "App/Plugin/Sites" folder.
+   Notice : don't use cake bake plugin !
+2. Setup database.php:
+   Add a config for database called "sites" with the same parameters of your default data base configs.
    You can use the same physical database as croogo, but `sites` datasource
    needs to be present since all plugin models will use this.
 
@@ -32,10 +33,39 @@ Configuration
 				);
 		}
 ```
-
-2. Activate the plugin
+3. Activate the plugin:
+   Go to your web site, => Extensions, and then click on activate
 
    Don't forget to cross your fingers.
+
+How to configure it
+-------------------
+1. Settings
+	Title:(optional)
+	Description:(optional)
+	Tagline:(optional)
+	Email:(optional)
+	Locale:(optional)
+	Timezone:(optional)
+	Theme:(optional)
+2. Domains
+	Domain:(optional)
+	Add Domain:(optional)
+3. Meta
+	Robots:(optional)
+	Keywords:(optional)
+	Description:(optional)
+4. Publishing
+	status:
+	apply:
+	save:
+
+
+How to find your new site
+-------------------------
+
+
+
 
 Link in a multisite environment
 -------------------------------
